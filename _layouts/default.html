@@ -3,10 +3,14 @@
 
   <!-- Head -->
   <head>
+  
+
   {%- if page.redirect -%}
     <meta http-equiv="refresh" content="3; url={{ site.baseurl }}/" />
   {%- endif -%}
   {% include head.html %}
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
   </head>
 
   <!-- Body -->
@@ -17,6 +21,10 @@
 
     <!-- Content -->
     <div class="container mt-5">
+
+      <div id="particles-js-left" class="particles-side"></div>
+      <div id="particles-js-right" class="particles-side"></div>
+
       {% if page.toc and page.toc.sidebar %}
         {% if page.toc.sidebar == "right" %}
         <div class="row">
@@ -59,5 +67,136 @@
     {% include scripts/analytics.html %}
     {% include scripts/progressBar.html %}
     {% include scripts/wechatModal.html %}
+    
+    <script>
+      {
+          particles = { "number": {
+              "value": 60,
+              "density": {
+                "enable": true,
+                "value_area": 800
+              }
+            },
+            "color": {
+              "value": "#d3d3d3"
+            },
+            "shape": {
+              "type": "circle",
+              "stroke": {
+                "width": 0,
+                "color": "#d3d3d3"
+              },
+              "polygon": {
+                "nb_sides": 3
+              },
+              "image": {
+                "src": "img/github.svg",
+                "width": 100,
+                "height": 100
+              }
+            },
+            "opacity": {
+              "value": 0.9,
+              "random": false,
+              "anim": {
+                "enable": false,
+                "speed": 0.5,
+                "opacity_min": 0.1,
+                "sync": false
+              }
+            },
+            "size": {
+              "value": 3,
+              "random": true,
+              "anim": {
+                "enable": false,
+                "speed": 40,
+                "size_min": 0.1,
+                "sync": false
+              }
+            },
+            "line_linked": {
+              "enable": true,
+              "distance": 300,
+              "color": "#d3d3d3",
+              "opacity": 0.7,
+              "width": 1
+            },
+            "move": {
+              "enable": true,
+              "speed": 6,
+              "direction": "none",
+              "random": false,
+              "straight": false,
+              "out_mode": "out",
+              "bounce": false,
+              "attract": {
+                "enable": false,
+                "rotateX": 600,
+                "rotateY": 1200
+              }
+            }
+          }
+          interactivity = {
+            "detect_on": "canvas",
+            "events": {
+              "onhover": {
+                "enable": true,
+                "mode": "repulse"
+              },
+              "onclick": {
+                "enable": true,
+                "mode": "push"
+              },
+              "resize": true
+            },
+            "modes": {
+              "grab": {
+                "distance": 100,
+                "line_linked": {
+                  "opacity": 1
+                }
+              },
+              "bubble": {
+                "distance": 400,
+                "size": 80,
+                "duration": 2,
+                "opacity": 0.8,
+                "speed": 3
+              },
+              "repulse": {
+                "distance": 100,
+                "duration": 0.5
+              },
+              "push": {
+                "particles_nb": 4
+              },
+              "remove": {
+                "particles_nb": 2
+              }
+            }
+          }
+          retina_detect = true
+        }
+      particlesJS("particles-js-left", 
+        {
+          "particles": particles,
+          "interactivity": interactivity,
+          "retina_detect": retina_detect
+        }
+      );
+      particlesJS("particles-js-right", 
+        {
+          "particles": particles,
+          "interactivity": interactivity,
+          "retina_detect": retina_detect
+
+        }
+      );
+
+    </script>
   </body>
+
+    
+
 </html>

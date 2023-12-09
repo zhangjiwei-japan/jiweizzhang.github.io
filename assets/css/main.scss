@@ -18,3 +18,20 @@ $max-content-width: {{ site.max_width }};
   "font-awesome/solid",
   "font-awesome/regular"
 ;
+
+.particles-side {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 20%; /* Adjust the width as needed */
+  height: 100vh; /* Full viewport height */
+  z-index: 0; /* Behind the content */
+}
+
+#particles-js-left {
+  left: 0;
+}
+
+#particles-js-right {
+  right: 0;
+}
