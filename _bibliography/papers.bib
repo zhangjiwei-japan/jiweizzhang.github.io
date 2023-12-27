@@ -13,7 +13,6 @@
     code={https://github.com/joanrod/ocr-vqgan},
     abstract={Synthetic image generation has recently experienced significant improvements in domains such as natural image or art generation. However, the problem of figure and diagram generation remains unexplored. A challenging aspect of generating figures and diagrams is effectively rendering readable texts within the images. To alleviate this problem, we present OCR-VQGAN, an image encoder, and decoder that leverages OCR pre-trained features to optimize a text perceptual loss, encouraging the architecture to preserve high-fidelity text and diagram structure. To explore our approach, we introduce the Paper2Fig100k dataset, with over 100k images of figures and texts from research papers. The figures show architecture diagrams and methodologies of articles available at arXiv.org from fields like artificial intelligence and computer vision. Figures usually include text and discrete objects, e.g., boxes in a diagram, with lines and arrows that connect them. We demonstrate the effectiveness of OCR-VQGAN by conducting several experiments on the task of figure reconstruction. Additionally, we explore the qualitative and quantitative impact of weighting different perceptual metrics in the overall loss function. We release code, models, and dataset at this https URL.}
 }
-
 @inproceedings{rodriguez2023figgen,
   title={FigGen: Text to Scientific Figure Generation},
   author={Rodriguez, Juan A. and Vazquez, David and Laradji, Issam and Pedersoli, Marco and Rodriguez, Pau},
@@ -32,10 +31,21 @@
   author={Rodriguez, Juan A. and Comas, Joaquim and Binefa, Xavier},
   booktitle={CCIA 2021 (Oral)},
   year={2021},
-  pdf={https://repositori.upf.edu/bitstream/handle/10230/53729/Binefa_fro_affe.pdf?sequence=1&isAllowed=y},
+  arxiv={2312.11556},
   preview={affective.png},
   selected={true},
-  abstract={Virtual learning and education have become crucial during the COVID-19 pandemic, which has forced a rethink by teachers and educators into designing online content and the indirect interaction with students. In an face-to-face class, some visual cues help the teacher recognize the engagement level of students, while the main weakness of the online approach is the lack of feedback that the teacher has about the learning process of the students. In this paper, we introduce a novel framework able to track the learning states, or LS, of the students while they are watching a piece of knowledge-based content. Specifically, we extract four learning states: Interested, Bored, Confused or Distracted. Finally, to demonstrate the system’s capability, we collected a reduced database to analyze the affective state of the subjects. From these preliminary results, we observe abrupt changes in the LS of the audience when there are abrupt changes in the narrative of the video, indicating that well-structured and bounded information is strongly related with the learning behaviour of the students.}
+  code={https://github.com/joanrod/star-vector},
 
+}
+
+@inproceedings{rodriguez2023starvector,
+  title={StarVector: Generating Scalable Vector Graphics Code from Images}, 
+  author={Rodriguez, Juan A. and Agarwal, Shubham and Laradji, Issam H. and Rodriguez, Pau and Vazquez, David and Pal, Christopher and Pedersoli, Marco},
+  booktitle={preprint},
+  year={2023},
+  pdf={https://repositori.upf.edu/bitstream/handle/10230/53729/Binefa_fro_affe.pdf?sequence=1&isAllowed=y},
+  preview={starvector.png},
+  selected={true},
+  abstract={Scalable Vector Graphics (SVGs) have become integral in modern image rendering applications due to their infinite scalability in resolution, versatile usability, and editing capabilities. SVGs are particularly popular in the fields of web development and graphic design. Existing approaches for SVG modeling using deep learning often struggle with generating complex SVGs and are restricted to simpler ones that require extensive processing and simplification. This paper introduces StarVector, a multimodal SVG generation model that effectively integrates Code Generation Large Language Models (CodeLLMs) and vision models. Our approach utilizes a CLIP image encoder to extract visual representations from pixel-based images, which are then transformed into visual tokens via an adapter module. These visual tokens are pre-pended to the SVG token embeddings, and the sequence is modeled by the StarCoder model using next-token prediction, effectively learning to align the visual and code tokens. This enables StarVector to generate unrestricted SVGs that accurately represent pixel images. To evaluate StarVector's performance, we present SVG-Bench, a comprehensive benchmark for evaluating SVG methods across multiple datasets and relevant metrics. Within this benchmark, we introduce novel datasets including SVG-Stack, a large-scale dataset of real-world SVG examples, and use it to pre-train StarVector as a large foundation model for SVGs. Our results demonstrate significant enhancements in visual quality and complexity handling over current methods, marking a notable advancement in SVG generation technology}
 
 }
