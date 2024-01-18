@@ -11,7 +11,7 @@ profile:
   more_info: >
     <p>ServiceNow Research</p>
     <p>Mila, Quebec AI Institute</p>
-    <p>École de Technologie Superieure (ÉTS)</p>
+    <p>École de Technologie Superieure, University of Quebec</p>
     <p>Montreal, Quebec, Canada</p>
 
 news: true  # includes a list of news items
@@ -22,7 +22,7 @@ social: true  # includes social icons at the bottom of the page
 
 Hi, I am Juan Rodriguez, you can also call me Joan (in Catalan).
 
-I am a Researcher at [ServiceNow Research](https://www.servicenow.com/company/research.html) and a PhD student at [Mila](https://mila.quebec/en/) and [École de Technologie Superieure (ÉTS)](https://www.etsmtl.ca/en/). I am based in Montreal, Canada, but I am from Barcelona, Spain. I am advised by Prof. [Marco Pedersoli](https://www.etsmtl.ca/en/research/professors/mpedersoli/), Prof. [Chris Pal](https://scholar.google.com/citations?user=1ScWJOoAAAAJ&hl=en), and Dr. [David Vazquez](https://scholar.google.ca/citations?user=1jHvtfsAAAAJ&hl=en)
+I am a Researcher at [ServiceNow Research](https://www.servicenow.com/company/research.html) and a PhD student at [Mila](https://mila.quebec/en/) and [École de Technologie Superieure, University of Quebec](https://www.etsmtl.ca/en/). I am based in Montreal, Canada, but I am from Barcelona, Spain. I am advised by Prof. [Marco Pedersoli](https://www.etsmtl.ca/en/research/professors/mpedersoli/), Prof. [Chris Pal](https://scholar.google.com/citations?user=1ScWJOoAAAAJ&hl=en), and Dr. [David Vazquez](https://scholar.google.ca/citations?user=1jHvtfsAAAAJ&hl=en)
 
 My research interests are in the intersection of Computer Vision and Natural Language Processing, with a focus on multimodal generative models. I am interested in learning how to leverage information from different modalities to generate more accurate and controlable outputs in all modalities. Recently I have been working with large language and vision models using transformers and diffusion. I have also been exploring the paradigm of generating code as an alternative for generating images (e.g. scalable vector graphics).
 
