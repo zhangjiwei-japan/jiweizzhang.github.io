@@ -31,10 +31,10 @@
   selected={true},
 }
 @inproceedings{rodriguez2023starvector,
-  title={StarVector: Generating Scalable Vector Graphics Code from Images}, 
-  author={Rodriguez, Juan A. and Agarwal, Shubham and Laradji, Issam H. and Rodriguez, Pau and Vazquez, David and Pal, Christopher and Pedersoli, Marco},
+  title={StarVector: Generating Scalable Vector Graphics Code from Images and Text}, 
+  author={Rodriguez, Juan A. and Puri, Abhay and Agarwal, Shubham and Rajeswar, Sai and Laradji, Issam H. and Rodriguez, Pau and Vazquez, David and Pal, Christopher and Pedersoli, Marco},
   booktitle={preprint},
-  year={2023},
+  year={2024},
   preview={starvector.png},
   arxiv={2312.11556},  
   selected={true},
@@ -76,4 +76,16 @@
       selected={true},
       abstract={Data analytics is essential for extracting valuable insights from data that can assist organizations in making effective decisions. We introduce InsightBench, a benchmark dataset with three key features. First, it consists of 100 datasets representing diverse business use cases such as finance and incident management, each accompanied by a carefully curated set of insights planted in the datasets. Second, unlike existing benchmarks focusing on answering single queries, InsightBench evaluates agents based on their ability to perform end-to-end data analytics, including formulating questions, interpreting answers, and generating a summary of insights and actionable steps. Third, we conducted comprehensive quality assurance to ensure that each dataset in the benchmark had clear goals and included relevant and meaningful questions and analysis. Furthermore, we implement a two-way evaluation mechanism using LLaMA-3 as an effective, open-source evaluator to assess agents' ability to extract insights. We also propose AgentPoirot, our baseline data analysis agent capable of performing end-to-end data analytics. Our evaluation on InsightBench shows that AgentPoirot outperforms existing approaches (such as Pandas Agent) that focus on resolving single queries. We also compare the performance of open- and closed-source LLMs and various evaluation strategies. Overall, this benchmark serves as a testbed to motivate further development in comprehensive automated data analytics.},
       code={https://github.com/ServiceNow/insight-bench}, 
+}
+
+@misc{rodriguez2024intentgptfewshotintentdiscovery,
+      title={IntentGPT: Few-shot Intent Discovery with Large Language Models}, 
+      author={Juan A. Rodriguez and Nicholas Botzer and David Vazquez and Christopher Pal and Marco Pedersoli and Issam Laradji},
+      year={2024},
+      arxiv={2411.10670},
+      url={https://arxiv.org/abs/2411.10670}, 
+      preview={intentgpt.png},
+      selected={true},
+      abstract={In today's digitally driven world, dialogue systems play a pivotal role in enhancing user interactions, from customer service to virtual assistants. In these dialogues, it is important to identify user's goals automatically to resolve their needs promptly. This has necessitated the integration of models that perform Intent Detection. However, users' intents are diverse and dynamic, making it challenging to maintain a fixed set of predefined intents. As a result, a more practical approach is to develop a model capable of identifying new intents as they emerge. We address the challenge of Intent Discovery, an area that has drawn significant attention in recent research efforts. Existing methods need to train on a substantial amount of data for correctly identifying new intents, demanding significant human effort. To overcome this, we introduce IntentGPT, a novel training-free method that effectively prompts Large Language Models (LLMs) such as GPT-4 to discover new intents with minimal labeled data. IntentGPT comprises an \textit{In-Context Prompt Generator}, which generates informative prompts for In-Context Learning, an \textit{Intent Predictor} for classifying and discovering user intents from utterances, and a \textit{Semantic Few-Shot Sampler} that selects relevant few-shot examples and a set of known intents to be injected into the prompt. Our experiments show that IntentGPT outperforms previous methods that require extensive domain-specific data and fine-tuning, in popular benchmarks, including CLINC and BANKING, among others.},
+      code={https://github.com/joanrod/intentgpt}
 }
