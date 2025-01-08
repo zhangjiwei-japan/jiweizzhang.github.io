@@ -1,3 +1,27 @@
+
+@inproceedings{rodriguez2023starvector,
+  title={StarVector: Generating Scalable Vector Graphics Code from Images and Text}, 
+  author={Rodriguez, Juan and Puri, Abhay and Agarwal, Shubham and Rajeswar, Sai and Laradji, Issam H. and Rodriguez, Pau and Vazquez, David and Pal, Christopher and Pedersoli, Marco},
+  booktitle={preprint},
+  year={2024},
+  preview={starvector.png},
+  arxiv={2312.11556},  
+  selected={true},
+  abstract={Scalable Vector Graphics (SVGs) have become integral in modern image rendering applications due to their infinite scalability in resolution, versatile usability, and editing capabilities. SVGs are particularly popular in the fields of web development and graphic design. Existing approaches for SVG modeling using deep learning often struggle with generating complex SVGs and are restricted to simpler ones that require extensive processing and simplification. This paper introduces StarVector, a multimodal SVG generation model that effectively integrates Code Generation Large Language Models (CodeLLMs) and vision models. Our approach utilizes a CLIP image encoder to extract visual representations from pixel-based images, which are then transformed into visual tokens via an adapter module. These visual tokens are pre-pended to the SVG token embeddings, and the sequence is modeled by the StarCoder model using next-token prediction, effectively learning to align the visual and code tokens. This enables StarVector to generate unrestricted SVGs that accurately represent pixel images. To evaluate StarVector's performance, we present SVG-Bench, a comprehensive benchmark for evaluating SVG methods across multiple datasets and relevant metrics. Within this benchmark, we introduce novel datasets including SVG-Stack, a large-scale dataset of real-world SVG examples, and use it to pre-train StarVector as a large foundation model for SVGs. Our results demonstrate significant enhancements in visual quality and complexity handling over current methods, marking a notable advancement in SVG generation technology},
+  code={https://github.com/joanrod/star-vector}
+}
+
+@misc{rodriguez2024bigdocsopenpermissivelylicenseddataset,
+      title={BigDocs: An Open and Permissively-Licensed Dataset for Training Multimodal Models on Document and Code Tasks}, 
+      author={Juan Rodriguez and Xiangru Jian and Siba Smarak Panigrahi and Tianyu Zhang and Aarash Feizi and Abhay Puri and Akshay Kalkunte and François Savard and Ahmed Masry and Shravan Nayak and Rabiul Awal and Mahsa Massoud and Amirhossein Abaskohi and Zichao Li and Suyuchen Wang and Pierre-André Noël and Mats Leon Richter and Saverio Vadacchino and Shubbam Agarwal and Sanket Biswas and Sara Shanian and Ying Zhang and Noah Bolger and Kurt MacDonald and Simon Fauvel and Sathwik Tejaswi and Srinivas Sunkara and Joao Monteiro and Krishnamurthy DJ Dvijotham and Torsten Scholak and Nicolas Chapados and Sepideh Kharagani and Sean Hughes and M. Özsu and Siva Reddy and Marco Pedersoli and Yoshua Bengio and Christopher Pal and Issam Laradji and Spandanna Gella and Perouz Taslakian and David Vazquez and Sai Rajeswar},
+      booktitle={preprint},
+      year={2024},
+      preview={bigdocs.png},
+      arxiv={2412.04626},
+      selected={true},
+      abstract={Multimodal AI has the potential to significantly enhance document-understanding tasks, such as processing receipts, understanding workflows, extracting data from documents, and summarizing reports. Code generation tasks that require long-structured outputs can also be enhanced by multimodality. Despite this, their use in commercial applications is often limited due to limited access to training data and restrictive licensing, which hinders open access. To address these limitations, we introduce BigDocs-7.5M, a high-quality, open-access dataset comprising 7.5 million multimodal documents across 30 tasks. We use an efficient data curation process to ensure our data is high-quality and license-permissive. Our process emphasizes accountability, responsibility, and transparency through filtering rules, traceable metadata, and careful content analysis. Additionally, we introduce BigDocs-Bench, a benchmark suite with 10 novel tasks where we create datasets that reflect real-world use cases involving reasoning over Graphical User Interfaces (GUI) and code generation from images. Our experiments show that training with BigDocs-Bench improves average performance up to 25.8% over closed-source GPT-4o in document reasoning and structured output tasks such as Screenshot2HTML or Image2Latex generation. Finally, human evaluations showed a preference for outputs from models trained on BigDocs over GPT-4o. This suggests that BigDocs can help both academics and the open-source community utilize and improve AI tools to enhance multimodal capabilities and document reasoning. The project is hosted at this https URL .},
+      code={https://huggingface.co/datasets/ServiceNow/BigDocs-Bench}, 
+}
 @inproceedings{rodriguez2023ocr,
     title={OCR-VQGAN: Taming text-within-image generation},
     author={Rodriguez, Juan and Vazquez, David and Laradji, Issam and Pedersoli, Marco and Rodriguez, Pau},
@@ -28,30 +52,7 @@
   year={2021},
   pdf={https://repositori.upf.edu/bitstream/handle/10230/53729/Binefa_fro_affe.pdf?sequence=1&isAllowed=y},
   preview={affective.png},
-  selected={true},
-}
-@inproceedings{rodriguez2023starvector,
-  title={StarVector: Generating Scalable Vector Graphics Code from Images and Text}, 
-  author={Rodriguez, Juan and Puri, Abhay and Agarwal, Shubham and Rajeswar, Sai and Laradji, Issam H. and Rodriguez, Pau and Vazquez, David and Pal, Christopher and Pedersoli, Marco},
-  booktitle={preprint},
-  year={2024},
-  preview={starvector.png},
-  arxiv={2312.11556},  
-  selected={true},
-  abstract={Scalable Vector Graphics (SVGs) have become integral in modern image rendering applications due to their infinite scalability in resolution, versatile usability, and editing capabilities. SVGs are particularly popular in the fields of web development and graphic design. Existing approaches for SVG modeling using deep learning often struggle with generating complex SVGs and are restricted to simpler ones that require extensive processing and simplification. This paper introduces StarVector, a multimodal SVG generation model that effectively integrates Code Generation Large Language Models (CodeLLMs) and vision models. Our approach utilizes a CLIP image encoder to extract visual representations from pixel-based images, which are then transformed into visual tokens via an adapter module. These visual tokens are pre-pended to the SVG token embeddings, and the sequence is modeled by the StarCoder model using next-token prediction, effectively learning to align the visual and code tokens. This enables StarVector to generate unrestricted SVGs that accurately represent pixel images. To evaluate StarVector's performance, we present SVG-Bench, a comprehensive benchmark for evaluating SVG methods across multiple datasets and relevant metrics. Within this benchmark, we introduce novel datasets including SVG-Stack, a large-scale dataset of real-world SVG examples, and use it to pre-train StarVector as a large foundation model for SVGs. Our results demonstrate significant enhancements in visual quality and complexity handling over current methods, marking a notable advancement in SVG generation technology},
-  code={https://github.com/joanrod/star-vector}
-}
-
-@misc{rodriguez2024bigdocsopenpermissivelylicenseddataset,
-      title={BigDocs: An Open and Permissively-Licensed Dataset for Training Multimodal Models on Document and Code Tasks}, 
-      author={Juan Rodriguez and Xiangru Jian and Siba Smarak Panigrahi and Tianyu Zhang and Aarash Feizi and Abhay Puri and Akshay Kalkunte and François Savard and Ahmed Masry and Shravan Nayak and Rabiul Awal and Mahsa Massoud and Amirhossein Abaskohi and Zichao Li and Suyuchen Wang and Pierre-André Noël and Mats Leon Richter and Saverio Vadacchino and Shubbam Agarwal and Sanket Biswas and Sara Shanian and Ying Zhang and Noah Bolger and Kurt MacDonald and Simon Fauvel and Sathwik Tejaswi and Srinivas Sunkara and Joao Monteiro and Krishnamurthy DJ Dvijotham and Torsten Scholak and Nicolas Chapados and Sepideh Kharagani and Sean Hughes and M. Özsu and Siva Reddy and Marco Pedersoli and Yoshua Bengio and Christopher Pal and Issam Laradji and Spandanna Gella and Perouz Taslakian and David Vazquez and Sai Rajeswar},
-      booktitle={preprint},
-      year={2024},
-      preview={bigdocs.png},
-      arxiv={2412.04626},
-      selected={true},
-      abstract={Multimodal AI has the potential to significantly enhance document-understanding tasks, such as processing receipts, understanding workflows, extracting data from documents, and summarizing reports. Code generation tasks that require long-structured outputs can also be enhanced by multimodality. Despite this, their use in commercial applications is often limited due to limited access to training data and restrictive licensing, which hinders open access. To address these limitations, we introduce BigDocs-7.5M, a high-quality, open-access dataset comprising 7.5 million multimodal documents across 30 tasks. We use an efficient data curation process to ensure our data is high-quality and license-permissive. Our process emphasizes accountability, responsibility, and transparency through filtering rules, traceable metadata, and careful content analysis. Additionally, we introduce BigDocs-Bench, a benchmark suite with 10 novel tasks where we create datasets that reflect real-world use cases involving reasoning over Graphical User Interfaces (GUI) and code generation from images. Our experiments show that training with BigDocs-Bench improves average performance up to 25.8% over closed-source GPT-4o in document reasoning and structured output tasks such as Screenshot2HTML or Image2Latex generation. Finally, human evaluations showed a preference for outputs from models trained on BigDocs over GPT-4o. This suggests that BigDocs can help both academics and the open-source community utilize and improve AI tools to enhance multimodal capabilities and document reasoning. The project is hosted at this https URL .},
-      code={https://huggingface.co/datasets/ServiceNow/BigDocs-Bench}, 
+  selected={false},
 }
 
 @inproceedings{samsami2024big,
@@ -73,7 +74,7 @@
       year={2024},
       arxiv={2407.06423},
       preview={insightbench.png},
-      selected={true},
+      selected={false},
       abstract={Data analytics is essential for extracting valuable insights from data that can assist organizations in making effective decisions. We introduce InsightBench, a benchmark dataset with three key features. First, it consists of 100 datasets representing diverse business use cases such as finance and incident management, each accompanied by a carefully curated set of insights planted in the datasets. Second, unlike existing benchmarks focusing on answering single queries, InsightBench evaluates agents based on their ability to perform end-to-end data analytics, including formulating questions, interpreting answers, and generating a summary of insights and actionable steps. Third, we conducted comprehensive quality assurance to ensure that each dataset in the benchmark had clear goals and included relevant and meaningful questions and analysis. Furthermore, we implement a two-way evaluation mechanism using LLaMA-3 as an effective, open-source evaluator to assess agents' ability to extract insights. We also propose AgentPoirot, our baseline data analysis agent capable of performing end-to-end data analytics. Our evaluation on InsightBench shows that AgentPoirot outperforms existing approaches (such as Pandas Agent) that focus on resolving single queries. We also compare the performance of open- and closed-source LLMs and various evaluation strategies. Overall, this benchmark serves as a testbed to motivate further development in comprehensive automated data analytics.},
       code={https://github.com/ServiceNow/insight-bench}, 
 }
