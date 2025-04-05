@@ -20,7 +20,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Hi, I am Juan Rodriguez, you can also call me Joan (in Catalan).
+Hi, I am Jiwei Zhang.
 
 I am a Researcher at [ServiceNow Research](https://www.servicenow.com/company/research.html) and a PhD student at [Mila](https://mila.quebec/en/) and [École de Technologie Superieure, University of Quebec](https://www.etsmtl.ca/en/). I am based in Montreal, Canada, but I am from Barcelona, Spain. I am advised by Prof. [Marco Pedersoli](https://www.etsmtl.ca/en/research/professors/mpedersoli/), Prof. [Chris Pal](https://scholar.google.com/citations?user=1ScWJOoAAAAJ&hl=en), and Dr. [David Vazquez](https://scholar.google.ca/citations?user=1jHvtfsAAAAJ&hl=en)
 
